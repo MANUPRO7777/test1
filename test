@@ -5244,7 +5244,7 @@ end
 function chatfunc(text,color,typet,font,timeex)
 	local chat = coroutine.wrap(function()
 		if Character:FindFirstChild("TalkingBillBoard")~= nil then
-			Character:FindFirstChild("TalkingBillBoard"):destroy()
+			Character:FindFirstChild("TalkingBillBoard"):  ()
 		end
 		local naeeym2 = Instance.new("BillboardGui",Character)
 		naeeym2.Size = UDim2.new(0,100,0,40)
