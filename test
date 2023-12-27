@@ -1,3 +1,4 @@
+--works only in RejectCharacterDeletions Disable roblox games and here are item names too
 game.Players.LocalPlayer.Character["LUAhEAD"].Handle.Mesh:Destroy() --Pink Hair
 game.Players.LocalPlayer.Character["Pink Hair"].Handle.Mesh:Destroy()
 game.Players.LocalPlayer.Character["Kate Hair"].Handle.Mesh:Destroy() --LavanderHair
