@@ -135,7 +135,7 @@ local ATTACK = false
 local EQUIPPED = false
 local HOLD = false
 local COMBO = 1
-local Rooted = false
+local Rooted = true
 local SINE = 0
 local KEYHOLD = false
 local CHANGE = 2 / Animation_Speed
@@ -264,8 +264,7 @@ function CreatePart(FORMFACTOR, PARENT, MATERIAL, REFLECTANCE, TRANSPARENCY, BRI
 	NEWPART.Position = Torso.Position
 	NEWPART.Material = MATERIAL
 	
-	NEWPART.Parent = PARENT
-	return NEWPART
+	
 end
 
 	local function weldBetween(a, b)
@@ -625,7 +624,7 @@ function CharacterFade(COLOR,TIMER)
 				FADER.Parent = FADE
 				FADER.Anchored = true
 				FADER.Transparency = 0.25+c.Transparency
-				
+				FADER:
 				FADER.CanCollide = false
 				FADER.Material = "Neon"
 				if FADER.Name == "Head" then
@@ -865,7 +864,7 @@ end)]]
 				if CHILD.Name == "Torso" or CHILD.Name == "UpperTorso" then
 					WACKYEFFECT({Time = 50, EffectType = "Sphere", Size = VT(0.2,0.2,0.2)*CHILD.Size.Magnitude, Size2 = VT(5,5,5)*CHILD.Size.Magnitude, Transparency = 0.6, Transparency2 = 1, CFrame = CF(CHILD.Position), MoveToPos = nil, RotationX = 0, RotationY = 0, RotationZ = 0, Material = "Neon", Color = C3(0,0,0), SoundID = 264486467, SoundPitch = MRANDOM(8,15)/10, SoundVolume = 4, UseBoomerangMath = true, Boomerang = 0, SizeBoomerang = 35})
 				end
-				--CHILD:
+				--CHILD:Destroy()
 			end
 		end
 		--HUM.Health = 0
@@ -1265,8 +1264,8 @@ function SpiritFire()
 							table.insert(CRACKPARTS,LASTPART)
 							local HITFLOOR,HITPOS = Raycast(LASTPART.Position+VT(0,0.1,0), (CF(RootPart.Position, RootPart.Position + VT(0, -1, 0))).lookVector, 0.5, Character)
 							if HITFLOOR == nil then
-								LASTPART:remove()
-								break
+								
+								
 							else
 								if MRANDOM(1,2) == 1 and PARTS > 1 then
 									table.insert(SPOTS,LASTPART.Position)
@@ -1405,8 +1404,7 @@ function ReapersBallad()
 				table.insert(CRACKPARTS,LASTPART)
 				local HITFLOOR,HITPOS = Raycast(LASTPART.Position+VT(0,0.1,0), (CF(RootPart.Position, RootPart.Position + VT(0, -1, 0))).lookVector, 0.5, Character)
 				if HITFLOOR == nil then
-					LASTPART:remove()
-					break
+					
 				end
 			end
 		end
