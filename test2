@@ -263,7 +263,7 @@ function CreatePart(FORMFACTOR, PARENT, MATERIAL, REFLECTANCE, TRANSPARENCY, BRI
 	NEWPART.Size = SIZE
 	NEWPART.Position = Torso.Position
 	NEWPART.Material = MATERIAL
-	NEWPART:BreakJoints()
+	
 	NEWPART.Parent = PARENT
 	return NEWPART
 end
@@ -625,7 +625,7 @@ function CharacterFade(COLOR,TIMER)
 				FADER.Parent = FADE
 				FADER.Anchored = true
 				FADER.Transparency = 0.25+c.Transparency
-				FADER:BreakJoints()
+				
 				FADER.CanCollide = false
 				FADER.Material = "Neon"
 				if FADER.Name == "Head" then
@@ -865,7 +865,7 @@ end)]]
 				if CHILD.Name == "Torso" or CHILD.Name == "UpperTorso" then
 					WACKYEFFECT({Time = 50, EffectType = "Sphere", Size = VT(0.2,0.2,0.2)*CHILD.Size.Magnitude, Size2 = VT(5,5,5)*CHILD.Size.Magnitude, Transparency = 0.6, Transparency2 = 1, CFrame = CF(CHILD.Position), MoveToPos = nil, RotationX = 0, RotationY = 0, RotationZ = 0, Material = "Neon", Color = C3(0,0,0), SoundID = 264486467, SoundPitch = MRANDOM(8,15)/10, SoundVolume = 4, UseBoomerangMath = true, Boomerang = 0, SizeBoomerang = 35})
 				end
-				--CHILD:Destroy()
+				--CHILD:
 			end
 		end
 		--HUM.Health = 0
