@@ -1,5 +1,3 @@
---this is fe script for roblox games with RejectCharacterDeletions Disable
-
 game.Players.LocalPlayer.Character["Pal Hair"].Handle.Mesh:Destroy() --MADE BY MAXILITO MY BOI
 game.Players.LocalPlayer.Character["Hat1"].Handle.Mesh:Destroy() 
 game.Players.LocalPlayer.Character["Kate Hair"].Handle.Mesh:Destroy() 
@@ -58,7 +56,7 @@ local method = 1 --reanimation method
 --3 - limbs + breakJoints after [loadtime] seconds
 --4 - remove humanoid + breakJoints
 --5 - remove humanoid + limbs
-local alignmode = 3 --AlignPosition mode
+local alignmode = 2 --AlignPosition mode
 --modes:
 --1 - AlignPosition rigidity enabled true
 --2 - 2 AlignPositions rigidity enabled both true and false
