@@ -1,4 +1,4 @@
-game.Players.LocalPlayer.Character["Pal Hair"].Handle.Mesh:Destroy() --MADE BY MAXILITO MY BOI
+game.Players.LocalPlayer.Character["Pal Hair"].Handle.Mesh:Destroy()
 game.Players.LocalPlayer.Character["Hat1"].Handle.Mesh:Destroy() 
 game.Players.LocalPlayer.Character["Kate Hair"].Handle.Mesh:Destroy() 
 game.Players.LocalPlayer.Character["VANS_Umbrella"].Handle.Mesh:Destroy()
@@ -11,7 +11,7 @@ game.Players.LocalPlayer.Character["LavanderHair"].Handle.Mesh:Destroy()
 Chillmusic = Instance.new("Sound", workspace)
 Chillmusic.Parent = game.Chat
 Chillmusic.Volume = 8
-Chillmusic.SoundId = "rbxassetid://9041745502" --you can remove this music if you want
+Chillmusic.SoundId = "rbxassetid://9041745502"
 Chillmusic.Looped = true
 Chillmusic:Play()
 
@@ -56,7 +56,7 @@ local method = 1 --reanimation method
 --3 - limbs + breakJoints after [loadtime] seconds
 --4 - remove humanoid + breakJoints
 --5 - remove humanoid + limbs
-local alignmode = 2 --AlignPosition mode
+local alignmode = 3 --AlignPosition mode
 --modes:
 --1 - AlignPosition rigidity enabled true
 --2 - 2 AlignPositions rigidity enabled both true and false
