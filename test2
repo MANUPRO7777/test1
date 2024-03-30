@@ -1,4 +1,4 @@
- --loadstring(game:HttpGet('https://raw.githubusercontent.com/GenesisFE/Genesis/main/Reanimation/FDless'))() --idk: 
+ --loadstring(game:HttpGet('https://raw.githubusercontent.com/GenesisFE/Genesis/main/Reanimation/Reanimate'))() --idk: 
 loadstring(game:HttpGet(("https://pastebin.com/raw/NJaKNq49"),true))() --idk
 --idk 
 
